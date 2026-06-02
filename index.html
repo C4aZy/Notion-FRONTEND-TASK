@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion Workshop — VIT Bhopal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- ─── NAV ─────────────────────────────────────────────────── -->
+    <nav id="navbar">
+      <div class="nav-brand">Notion Club · VIT Bhopal</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#announcements">Announcements</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="nav-register-btn" onclick="document.getElementById('registerModal').style.display='flex'">
+        Register Now
+      </button>
+    </nav>
+
+    <main>
+
+      <!-- ─── HERO ─────────────────────────────────────────────── -->
+      <section id="hero">
+        <div class="hero-content">
+          <span class="hero-label">VIT Bhopal Presents</span>
+          <h1 class="hero-title">Notion Club<br />Workshop</h1>
+          <p class="hero-tagline">
+            Master your productivity. Collaborate smarter.<br />
+            Build your second brain — all in one day.
+          </p>
+          <div class="hero-meta">
+            <span>📅 23th July 2026</span>
+            <span>⏰ 10:00 AM – 4:00 PM</span>
+            <span>📍 VIT Bhopal AB-2</span>
+          </div>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="document.getElementById('registerModal').style.display='flex'">
+              Register Now
+            </button>
+            <a href="#announcements" class="btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-poster">
+          <img src="Notion_workshop.png" alt="Notion Workshop Banner" />
+        </div>
+      </section>
+
+      <!-- ─── COUNTDOWN ─────────────────────────────────────────── -->
+      <section id="countdown">
+        <p class="countdown-label">Event Starts In</p>
+        <div class="countdown-grid">
+          <div class="countdown-unit">
+            <span id="days">00</span>
+            <label>Days</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <span id="hours">00</span>
+            <label>Hours</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <span id="minutes">00</span>
+            <label>Minutes</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <span id="seconds">00</span>
+            <label>Seconds</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── ANNOUNCEMENTS ─────────────────────────────────────── -->
+      <section id="announcements">
+        <h2 class="section-title">Announcements</h2>
+
+        <div class="announcement-grid">
+
+          <div class="announcement-card" id="event-details">
+            <div class="card-icon">📋</div>
+            <h3>Event Details</h3>
+            <ul>
+              <li><strong>Date:</strong> 23rd July 2026</li>
+              <li><strong>Time:</strong> 10:00 AM – 4:00 PM</li>
+              <li><strong>Venue:</strong> VIT Bhopal AB-2</li>
+              <li><strong>Topics:</strong> Notion Basics, Advanced Features, Use Cases</li>
+              <li><strong>Registration Deadline:</strong> 18th July 2026</li>
+            </ul>
+          </div>
+
+          <div class="announcement-card" id="rules">
+            <div class="card-icon">📜</div>
+            <h3>Rules &amp; Instructions</h3>
+            <ul>
+              <li>Participants must be students of VIT Bhopal.</li>
+              <li>Each participant can register for only one workshop.</li>
+              <li>Attendance is mandatory for the entire duration.</li>
+              <li>Participants are expected to bring their own laptops.</li>
+              <li>Any form of misconduct will lead to disqualification.</li>
+            </ul>
+          </div>
+
+          <div class="announcement-card" id="venue">
+            <div class="card-icon">📍</div>
+            <h3>Venue &amp; Platform</h3>
+            <ul>
+              <li><strong>Location:</strong> VIT Bhopal Auditorium, Main Campus</li>
+              <li><strong>Mode:</strong> In-Person</li>
+              <li><strong>Platform Used:</strong> Notion (web &amp; desktop)</li>
+              <li><strong>Prerequisites:</strong> Create a free Notion account before attending.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ─── SCHEDULE ──────────────────────────────────────────── -->
+      <section id="schedule">
+        <h2 class="section-title">Schedule</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-time">9:00 – 10:00 AM</span>
+            <div class="timeline-content">
+              <h4>Introduction to Notion</h4>
+              <p>Getting started: interface overview and key concepts.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">10:00 – 11:00 AM</span>
+            <div class="timeline-content">
+              <h4>Notion for Personal Productivity</h4>
+              <p>Build your personal OS with databases, tasks and journals.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">11:00 AM – 12:00 PM</span>
+            <div class="timeline-content">
+              <h4>Notion for Team Collaboration</h4>
+              <p>Shared workspaces, comments, and real-time editing.</p>
+            </div>
+          </div>
+          <div class="timeline-item timeline-break">
+            <span class="timeline-time">12:00 – 1:00 PM</span>
+            <div class="timeline-content">
+              <h4>🍽 Lunch Break</h4>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">1:00 – 2:00 PM</span>
+            <div class="timeline-content">
+              <h4>Notion for Project Management</h4>
+              <p>Kanban boards, Gantt charts, and sprint tracking.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">2:00 – 3:00 PM</span>
+            <div class="timeline-content">
+              <h4>Notion for Knowledge Management</h4>
+              <p>Build a second brain and team wiki.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">3:00 – 4:00 PM</span>
+            <div class="timeline-content">
+              <h4>Q &amp; A Session</h4>
+              <p>Open floor for questions with all speakers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── SPEAKERS ──────────────────────────────────────────── -->
+      <section id="speakers">
+        <h2 class="section-title">Speakers &amp; Guests</h2>
+        <div class="speakers-grid">
+
+          <div class="speaker-card">
+            <div class="speaker-avatar" aria-label="Speaker photo placeholder">A</div>
+            <h4>Abhi</h4>
+            <p class="speaker-role">Notion Expert</p>
+            <p class="speaker-topic">Speaks on: Notion Basics &amp; Advanced Features</p>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar" aria-label="Speaker photo placeholder">R</div>
+            <h4>Rahul</h4>
+            <p class="speaker-role">Productivity Coach</p>
+            <p class="speaker-topic">Speaks on: Personal Productivity</p>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar" aria-label="Speaker photo placeholder">M</div>
+            <h4>Mohan</h4>
+            <p class="speaker-role">Project Manager</p>
+            <p class="speaker-topic">Speaks on: Project &amp; Team Management</p>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar" aria-label="Speaker photo placeholder">S</div>
+            <h4>Sneha</h4>
+            <p class="speaker-role">Knowledge Management Specialist</p>
+            <p class="speaker-topic">Speaks on: Knowledge Management</p>
+          </div>
+
+        </div>
+
+        <div class="roles-grid">
+          <h3 class="subsection-title">Organizing Team</h3>
+          <div class="roles-list">
+            <div class="role-item">
+              <span class="role-tag">Workshop Coordinator</span>
+              <span class="role-name">ABC</span>
+            </div>
+            <div class="role-item">
+              <span class="role-tag">Technical Support</span>
+              <span class="role-name">XYZ</span>
+            </div>
+            <div class="role-item">
+              <span class="role-tag">Event Manager</span>
+              <span class="role-name">PQR</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FAQ ───────────────────────────────────────────────── -->
+      <section id="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary>What is Notion?</summary>
+            <p>Notion is an all-in-one workspace for notes, tasks, databases, and team collaboration — think of it as your personal and professional operating system.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Who can attend the workshop?</summary>
+            <p>The workshop is open to all currently enrolled students of VIT Bhopal. Faculty and staff may attend subject to seat availability.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is there a registration fee?</summary>
+            <p>No, the workshop is completely free of cost for all registered participants.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need prior experience with Notion?</summary>
+            <p>No prior experience is required. The workshop is designed to take you from zero to proficient, covering everything from the basics to advanced use cases.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What should I bring?</summary>
+            <p>Bring your own laptop with a modern browser installed. Make sure to create a free Notion account at notion.so before the event. A charger is also recommended for the full-day session.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Will there be a certificate of participation?</summary>
+            <p>Yes, all participants who attend the full session will receive a digital certificate of participation issued by VIT Bhopal Notion Club.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What happens if I miss a session?</summary>
+            <p>Attendance is mandatory for the entire duration. However, session recordings may be shared with registered participants after the event at the organizer's discretion.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I contact the organizers?</summary>
+            <p>Reach out to the Workshop Coordinator (ABC) or Event Manager (PQR) via the official VIT Bhopal Notion Club email or their campus contact channels.</p>
+          </details>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Notion Club · VIT Bhopal</h3>
+          <p>Empowering students to work smarter with modern productivity tools.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#announcements">Announcements</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#speakers">Speakers</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-cta">
+          <p>Seats are limited. Register before 18th July 2026.</p>
+          <button class="btn-primary" onclick="document.getElementById('registerModal').style.display='flex'">
+            Register Now
+          </button>
+        </div>
+      </div>
+
+    <!-- ─── REGISTRATION MODAL ────────────────────────────────────── -->
+    <div id="registerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display:none;">
+      <div class="modal-backdrop" onclick="document.getElementById('registerModal').style.display='none'"></div>
+      <div class="modal-box">
+        <button class="modal-close" aria-label="Close" onclick="document.getElementById('registerModal').style.display='none'">
+          &times;
+        </button>
+        <h2 id="modalTitle">Workshop Registration</h2>
+        <p class="modal-subtitle">Fill in your details to secure your spot.</p>
+
+        <div class="form-group">
+          <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required />
+        </div>
+
+        <div class="form-group">
+          <label for="college">College / Organization <span aria-hidden="true">*</span></label>
+          <input type="text" id="college" placeholder="Enter your college or organization" required />
+        </div>
+
+        <div class="form-group">
+          <label for="role">Role / Designation <span aria-hidden="true">*</span></label>
+          <select id="role">
+            <option value="" disabled selected>Select your role</option>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+            <button class="btn-primary" type="button" onclick="submitRegistration()">
+                Submit Registration
+            </button>
+          <button class="btn-secondary" type="button" onclick="document.getElementById('registerModal').style.display='none'">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
